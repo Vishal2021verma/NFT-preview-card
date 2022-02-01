@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: 'Outfit', sans-serif;
+}
+.back-container{
+    width:100%;
+    height:100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height:65%;
+    width:280px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    padding:20px;
+    
+}
+.block-img{
+    width:100%;
+    height:55%;
+    overflow: hidden;
+    margin: 0 0 15px 0;
+}
+.block-img img{
+    border-radius: 10px;
+    width:100%;
+    height:100%;   
+}
+.overlay{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -225%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+h3{
+    font-weight: 600;
+    color:hsl(0, 0%, 100%);
+    margin: 0px;
+}
+p{
+    color:hsl(215, 51%, 70%);
+    font-size: 14px;
+}
+
+.eth{
+    font-weight: 600;
+}
+.em-div div span{
+    font-size: 14px;
+    color:hsl(215, 51%, 70%);
+    margin-left: 2px;
+    padding-bottom: 4px;
+    
+}
+
+.em-div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 15px 0;
+}
+.block-user{
+    display: flex;
+    flex-direction: row;
+}
+.block-user img{
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.block-user span{
+    padding-top: 5px;
+    font-size: 12px;
+    color:hsl(215, 51%, 70%);
+    margin-left: 0px;
+}
+svg{
+    padding-top:2px;
+}
+
+hr{
+    text-align: center;
+    border: none;
+    border-top: 1px solid hsl(215, 51%, 70%);
+    margin: 0 auto 15px auto;
+    width: 100%;
+}
+.block-user a{
+    color: hsl(215, 51%, 70%);
+    text-decoration: none;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/* Active state */
+.block-details h3:hover,.block-user a:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.block-img:hover .overlay{
+    opacity:1;
+}
+.block-img:hover img{
+    opacity: .5;
+}
+.block-img:hover{
+    background-color:rgb(0, 255, 247); 
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 0px 0px 20px 1px #070f1abd;
+    transition: .5s ease;
+}
